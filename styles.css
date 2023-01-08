@@ -1,0 +1,199 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;700&family=Outfit&display=swap'); */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #E6EFF5;
+}
+
+html {
+    font-size: 10px;
+}
+
+.container {
+    background-color: white;
+    margin: 16.3rem auto;
+    max-width: 63.5rem;
+    height: 43.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 25.9rem;
+    grid-template-areas: 
+        "community community" 
+        "subscription why-us"
+    ;
+}
+
+.container__section--white {
+    background-color: white;
+    grid-area: community;
+    padding: 4.0rem;
+}
+
+.container__section--white h1 {
+    margin-bottom: 2.4rem;
+}
+
+.container__section--primary {
+    background: #2AB3B1;
+    grid-area: subscription;
+}
+
+.container__section--secondary {
+    position: relative;
+    background: hsl(179, 62%, 43%);
+    grid-area: why-us;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.15;
+    background-color: white;
+}
+
+.title--main {
+    font-family: 'Karla';
+        /* font-style: normal; */
+        /* font-weight: 700; */
+        font-size: 2.4rem;
+        line-height: 2.8rem;
+        /* identical to box height */
+    
+        letter-spacing: -.03rem;
+    
+        color: #2AB3B1;
+}
+
+.title--sub {
+font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    /* identical to box height */
+
+    letter-spacing: -.0225rem;
+
+    color: #FFFFFF;
+    margin-bottom: 1.8rem;
+}
+
+.title--green {
+    font-family: 'Karla';
+        /* font-style: normal; */
+        /* font-weight: 700; */
+        font-size: 1.8rem;
+        line-height: 2.1rem;
+        /* identical to box height */
+    
+        letter-spacing: -.0225rem;
+    
+        color: #C0DF33;
+        margin-bottom: 1.1rem;
+}
+
+.desc {
+    font-family: 'Karla';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        /* or 162% */
+    
+        letter-spacing: -.02rem;
+    
+        color: #9AA7BE;
+}
+
+.desc--light {
+font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.0rem;
+    /* or 143% */
+
+    letter-spacing: -.0175rem;
+
+    color: #FFFFFF;
+
+    mix-blend-mode: normal;
+    opacity: 0.75;
+}
+
+.desc--light li {
+    list-style: none;
+}
+
+.section {
+    padding: 4.0rem;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+}
+
+.price--dollar {
+    font-family: 'Karla';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 3.2rem;
+        line-height: 3.7rem;
+        letter-spacing: -.04rem;
+    
+        color: #FFFFFF;
+        margin-right: 1.1rem;
+}
+
+.price--month {
+    font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        /* identical to box height, or 162% */
+    
+        letter-spacing: -.02rem;
+    
+        color: #FFFFFF;
+    
+        mix-blend-mode: normal;
+        opacity: 0.5;
+}
+
+.btn {
+    margin-top: 2.7rem;
+    width: 100%;
+    padding: 1.5rem 8.9rem;
+    border: none;
+background: #C0DF33;
+    box-shadow: .0rem 1.0rem 1.0rem rgba(0, 0, 0, 0.0973011);
+    border-radius: .5rem;
+    color: white;
+    font-weight: 700;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        /* identical to box height */
+    
+        letter-spacing: -.02rem;
+        border: none;
+}
+
+@media screen and (max-width: 635px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 7.2rem 3.2rem 6.2rem 3.2rem;
+        min-width: 31.1rem;
+        height: 72.2rem;
+        /* max-width: 3.11rem; */
+    }
+
+    .btn {
+        font-size: 1.2rem;
+    }
+}
