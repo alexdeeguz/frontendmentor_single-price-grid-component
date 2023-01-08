@@ -126,6 +126,19 @@ font-family: 'Karla';
     opacity: 0.75;
 }
 
+.desc--light-sub {
+    font-family: 'Karla';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        /* identical to box height, or 162% */
+    
+        letter-spacing: -0.2px;
+    
+        color: #FFFFFF;
+}
+
 .desc--light li {
     list-style: none;
 }
